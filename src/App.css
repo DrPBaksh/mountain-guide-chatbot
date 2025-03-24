@@ -1,0 +1,124 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.app-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/mountain-header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Main content styles */
+.app-main {
+  flex: 1;
+  padding: 3rem 1rem;
+  background-color: #f5f7fa;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer styles */
+.app-footer {
+  background-color: #16324F;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+.app-footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.app-footer a {
+  color: #3E8A89;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.app-footer a:hover {
+  color: #4FB3B0;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 3rem 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+  
+  .app-main {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-header {
+    padding: 2rem 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .app-main {
+    padding: 1.5rem 1rem;
+  }
+  
+  .app-footer {
+    padding: 1rem;
+  }
+}
